@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="id" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Materi 11 TKJ</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"
+    ></script>
+    <style>
+      /* Agar tampilan PDF pas */
+      .pdf-container {
+        height: 500px;
+      }
+      @media (max-width: 768px) {
+        .pdf-container {
+          height: 350px;
+        }
+      }
+    </style>
+  </head>
+  <body class="bg-blue-50 text-gray-800 font-sans antialiased">
+    <nav
+      class="bg-blue-900 shadow-lg sticky top-0 z-50 border-b-4 border-yellow-400"
+    >
+      <div
+        class="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center"
+      >
+        <a
+          href="../index.html"
+          class="text-yellow-300 hover:text-white font-bold flex items-center gap-2 transition"
+        >
+          <svg
+            class="w-5 h-5"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M10 19l-7-7m0 0l7-7m-7 7h18"
+            ></path>
+          </svg>
+          <span>Kembali</span>
+        </a>
+
+        <div class="flex gap-4">
+          <a
+            href="#section-uts"
+            class="text-white hover:text-yellow-300 font-medium text-sm md:text-base transition"
+            >Sebelum UTS</a
+          >
+          <a
+            href="#section-uas"
+            class="text-white hover:text-yellow-300 font-medium text-sm md:text-base transition"
+            >Sebelum UAS</a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <main class="max-w-6xl mx-auto py-10 px-6">
+      <div class="mb-12 text-center">
+        <h1
+          class="text-3xl md:text-4xl font-extrabold text-blue-900"
+          id="page-title"
+        >
+          Memuat Materi...
+        </h1>
+        <p class="text-purple-700 font-medium mt-2">
+          Arsip Materi Pembelajaran & Modul Praktikum
+        </p>
+      </div>
+
+      <div
+        id="error-message"
+        class="hidden bg-red-100 border-l-4 border-red-500 text-red-700 p-4 mb-8"
+        role="alert"
+      >
+        <p class="font-bold">Data tidak ditemukan</p>
+        <p>Materi untuk tahun ajaran ini belum diinput.</p>
+      </div>
+
+      <section id="section-uts" class="mb-20 scroll-mt-24">
+        <div class="flex items-center gap-4 mb-8">
+          <h2
+            class="text-2xl font-bold text-white bg-purple-700 px-6 py-2 rounded-lg shadow-md"
+          >
+            Materi Sebelum UTS
+          </h2>
+          <div class="h-1 flex-grow bg-purple-200 rounded"></div>
+        </div>
+
+        <div id="container-uts" class="space-y-8"></div>
+
+        <div id="kisi-uts-wrapper" class="hidden mt-10"></div>
+      </section>
+
+      <section id="section-uas" class="mb-20 scroll-mt-24">
+        <div class="flex items-center gap-4 mb-8">
+          <h2
+            class="text-2xl font-bold text-white bg-blue-800 px-6 py-2 rounded-lg shadow-md"
+          >
+            Materi Sebelum UAS
+          </h2>
+          <div class="h-1 flex-grow bg-blue-200 rounded"></div>
+        </div>
+
+        <div id="container-uas" class="space-y-8"></div>
+
+        <div id="kisi-uas-wrapper" class="hidden mt-10"></div>
+      </section>
+    </main>
+
+    <footer class="bg-gray-800 text-gray-300 py-6 text-center">
+      <p>&copy; Kafi Agung Gunawan - SMK Pembangunan Tukdana</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
