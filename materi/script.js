@@ -5,7 +5,7 @@ const databaseMateri = {
     1: {
       // Semester 1
       uts: [],
-      kisiUts: "1anwOms85xBoLL9ukPbX4p7cXt6rcXQcp", // Kosongkan ("") jika belum ada
+      kisiUts: "", // Kosongkan ("") jika belum ada
 
       uas: [],
       kisiUas: "1anwOms85xBoLL9ukPbX4p7cXt6rcXQcp",
@@ -77,6 +77,14 @@ const databaseMateri = {
           deskripsi:
             "Kelompok 2 (Sopi, Emy, Rahma, Tasya) menyajikan materi fundamental mengenai Perangkat Keras (Hardware). Selain mendefinisikan hardware sebagai komponen fisik komputer yang dapat disentuh, modul ini secara khusus membedah fungsi vital dari Processor sebagai otak pemrosesan data instruksi, serta GPU (Graphics Processing Unit) yang bertugas khusus untuk merender grafik dan visual 2D/3D secara cepat dan efisien.",
           fileId: "1AohWQTkGGFJsJsAD1gtU4D7iDt4IxmJg",
+        },
+        {
+          pertemuan: 6, // Lanjutan setelah UTS
+          judul: "Pengenalan Software",
+          deskripsi:
+            "Materi yang disusun oleh Kelompok 3 (Aisah, Airin, Neni, Sintia) ini berfokus pada aspek Perangkat Lunak (Software). Modul ini tidak hanya menjelaskan definisi software sebagai jembatan non-fisik antara pengguna dan sistem, tetapi juga membandingkan secara teknis dua Sistem Operasi utama: Linux yang berbasis open-source dengan stabilitas tinggi untuk server, dan Windows yang menawarkan antarmuka grafis (GUI) komersial yang luas digunakan untuk produktivitas sehari-hari",
+          fileId:
+            "https://drive.google.com/file/d/17aP_Q5KD6CIyMg1cYY2gNzz2wqTMtfGm/view?usp=drive_link",
         },
       ],
       kisiUas: "14CY_EYlmnKEdcEJyq2SEWc8lsibTXSh-",
